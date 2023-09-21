@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECET130Lab3MAUICalculator", "ECET130Lab3MAUICalculator.csproj", "{E7C8306F-86CE-483B-B6BC-D14AB1E4211D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7C8306F-86CE-483B-B6BC-D14AB1E4211D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7C8306F-86CE-483B-B6BC-D14AB1E4211D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7C8306F-86CE-483B-B6BC-D14AB1E4211D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7C8306F-86CE-483B-B6BC-D14AB1E4211D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74B46B5C-9385-4101-A92C-4DAB7783BB25}
+	EndGlobalSection
+EndGlobal
