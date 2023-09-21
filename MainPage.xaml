@@ -20,10 +20,12 @@
 
             <Entry x:Name="firstNumberEntry"
                    Placeholder="First Number"
+                   Text=""
                    TextChanged="firstNumberEntry_TextChanged"
                    />
             <Entry  x:Name="secondNumberEntry"
                     Placeholder="Second Number"
+                    Text=""
                     TextChanged="secondNumberEntry_TextChanged"/>
 
             <Border Padding="10">
