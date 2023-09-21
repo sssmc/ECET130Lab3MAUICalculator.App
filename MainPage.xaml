@@ -11,6 +11,7 @@
             HorizontalOptions="Start">
 
             <Label
+                x:Name="titleLabel"
                 Text="Calculator"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
@@ -40,7 +41,6 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="80"/>
                     <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="80"/>
                 </Grid.ColumnDefinitions>
                 <Button x:Name="addButton"
                         Text="+"
@@ -64,6 +64,12 @@
                         Text="/"
                         FontSize="80"
                         Clicked="divideButton_Clicked"/>
+                <Button x:Name="exponentButton"
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        Text="^"
+                        FontSize="80"
+                        Clicked="exponentButton_Clicked"/>
             </Grid>
             <Label Text="by Sebastien Robitaille"/>
         </VerticalStackLayout>

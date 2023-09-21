@@ -3,6 +3,8 @@
 public partial class MainPage : ContentPage
 {
 
+	int easterEggCounter = 0;
+
 	public MainPage()
 	{
 		InitializeComponent();
@@ -47,6 +49,9 @@ public partial class MainPage : ContentPage
 			case '/':
 				result = firstNumberDouble / secondNumberDouble;
 				break;
+			case '^':
+				result = Math.Pow(firstNumberDouble, secondNumberDouble);
+				break;
 		}
 		
 		return $"{firstNumberDouble} {operation} {secondNumberDouble} = {result}";
@@ -78,6 +83,16 @@ public partial class MainPage : ContentPage
     {
 
 		resultLabel.Text = doOperation(firstNumberEntry.Text, secondNumberEntry.Text, '+');
+		easterEggCounter++;
+		if(easterEggCounter >= 9)
+		{
+			easterEggCounter = 0;
+			titleLabel.Text = "Sebastien's Calculator";
+		}
+		else
+		{
+            titleLabel.Text = "Calculator";
+        }
     }
 
     void subtractButton_Clicked(System.Object sender, System.EventArgs e)
@@ -93,6 +108,11 @@ public partial class MainPage : ContentPage
     void divideButton_Clicked(System.Object sender, System.EventArgs e)
     {
         resultLabel.Text = doOperation(firstNumberEntry.Text, secondNumberEntry.Text, '/');
+    }
+
+    void exponentButton_Clicked(System.Object sender, System.EventArgs e)
+    {
+		resultLabel.Text = doOperation(firstNumberEntry.Text, secondNumberEntry.Text, '^');
     }
 
     void firstNumberEntry_TextChanged(System.Object sender, Microsoft.Maui.Controls.TextChangedEventArgs e)
