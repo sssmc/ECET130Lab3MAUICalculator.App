@@ -9,7 +9,6 @@
             Padding="50,0"
             VerticalOptions="Start"
             HorizontalOptions="Start">
-
             <Label
                 x:Name="titleLabel"
                 Text="Calculator"
@@ -17,62 +16,18 @@
                 FontSize="32"
                 Padding="0,60,0,0"
                 HorizontalOptions="Center" />
-
-            <Entry x:Name="firstNumberEntry"
-                   Placeholder="First Number"
+            <Entry x:Name="equationEntry"
+                   Placeholder="Enter equation"
                    Text=""
-                   TextChanged="firstNumberEntry_TextChanged"
+                   TextChanged="equationEntry_TextChanged"
                    />
-            <Entry  x:Name="secondNumberEntry"
-                    Placeholder="Second Number"
-                    Text=""
-                    TextChanged="secondNumberEntry_TextChanged"/>
-
             <Border Padding="10">
             <Label x:Name="resultLabel"
                    Text="Result"
                    FontSize="24"/>
             </Border>
-            <Grid RowSpacing="50"
-                  ColumnSpacing="50">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="80" />
-                    <RowDefinition Height="80" />
-                    <RowDefinition Height="80" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="80"/>
-                </Grid.ColumnDefinitions>
-                <Button x:Name="addButton"
-                        Text="+"
-                        FontSize="80"
-                        Clicked="addButton_Clicked">
-                </Button>
-                <Button x:Name="subtractButton"
-                        Grid.Column="1"
-                        Text="-"
-                        FontSize="80"
-                        Clicked="subtractButton_Clicked"/>
-                <Button x:Name="multiplyButton"
-                        Grid.Column="0"
-                        Grid.Row="1"
-                        Text="*"
-                        FontSize="80"
-                        Clicked="multiplyButton_Clicked"/>
-                <Button x:Name="divideButton"
-                        Grid.Column="1"
-                        Grid.Row="1"
-                        Text="/"
-                        FontSize="80"
-                        Clicked="divideButton_Clicked"/>
-                <Button x:Name="exponentButton"
-                        Grid.Column="0"
-                        Grid.Row="2"
-                        Text="^"
-                        FontSize="80"
-                        Clicked="exponentButton_Clicked"/>
-            </Grid>
+            
+            
             <Label Text="by Sebastien Robitaille"/>
         </VerticalStackLayout>
     </ScrollView>
